@@ -9,8 +9,8 @@ import Foundation
 
 struct FeedItem {
     let id: UUID
-    var description: String?
-    var location: String?
-    var url: URL
+    let description: String?
+    let location: String?
+    let url: URL
 }
 
