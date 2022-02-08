@@ -109,9 +109,9 @@ class CodableFeedStoreTests: XCTestCase {
                 default:
                     XCTFail("Expected retrieving twice from empty cache to deliver same empty result, got \(firstResult) and \(secondResult) instead")
                 }
+                
+                exp.fulfill()
             }
-            
-            exp.fulfill()
         }
         
         wait(for: [exp], timeout: 1.0)
@@ -135,9 +135,9 @@ class CodableFeedStoreTests: XCTestCase {
                 default:
                     XCTFail("Expected found result with feed \(feed) and timestamp \(timestamp), got \(retrieveResult) instead")
                 }
+                
+                exp.fulfill()
             }
-            
-            exp.fulfill()
         }
         
         wait(for: [exp], timeout: 1.0)
@@ -182,6 +182,10 @@ class CodableFeedStoreTests: XCTestCase {
         let sut = CodableFeedStore(storeURL: testSpecificStoreURL())
         trackForMemoryLeaks(sut, file: file, line: line)
         return sut
+    }
+    
+    func expect(_ sut: CodableFeedStore, toRetrieveWith expectedResult: RetrieveCachedFeedResult) {
+        
     }
     
     private func setupEmptyStoreState() {
