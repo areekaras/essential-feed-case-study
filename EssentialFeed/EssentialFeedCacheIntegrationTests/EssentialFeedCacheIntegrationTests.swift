@@ -29,18 +29,18 @@ class EssentialFeedCacheIntegrationTests: XCTestCase {
     }
     
     func test_load_deliversItemsSavedOnSeperateInstance() {
-        let sutPerformSave = makeSUT()
-        let sutPerformLoad = makeSUT()
+        let sutToPerformSave = makeSUT()
+        let sutToPerformLoad = makeSUT()
         let feed = uniqueImageFeed().models
         
         let saveExp = expectation(description: "Wait for save completion")
-        sutPerformSave.save(feed) { saveError in
+        sutToPerformSave.save(feed) { saveError in
             XCTAssertNil(saveError, "Expected to save feed successfully")
             saveExp.fulfill()
         }
         wait(for: [saveExp], timeout: 1.0)
         
-        expect(sutPerformLoad, toLoad: feed)
+        expect(sutToPerformLoad, toLoad: feed)
     }
     
     //MARK: - Helpers
