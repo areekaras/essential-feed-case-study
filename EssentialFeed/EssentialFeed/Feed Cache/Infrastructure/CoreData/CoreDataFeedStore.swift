@@ -47,7 +47,7 @@ public final class CoreDataFeedStore: FeedStore {
     }
     
     public func deleteCachedFeed(completion: @escaping DeletionCompletion) {
-        perform { context in 
+        perform { context in
             do {
                 try ManagedCache.find(in: context).map(context.delete).map(context.save)
                 completion(nil)
@@ -60,37 +60,6 @@ public final class CoreDataFeedStore: FeedStore {
     private func perform(_ action: @escaping (NSManagedObjectContext) -> Void) {
         let context = self.context
         context.perform { action(context) }
-    }
-}
-
-private extension NSPersistentContainer {
-    enum LoadingError: Swift.Error {
-        case modelNotFound
-        case failedToLoadPersistantStores(Swift.Error)
-    }
-    
-    static func load(modelName name: String, url: URL, in bundle: Bundle) throws -> NSPersistentContainer {
-        guard let model = NSManagedObjectModel.with(name: name, in: bundle) else {
-            throw LoadingError.modelNotFound
-        }
-        
-        let description = NSPersistentStoreDescription(url: url)
-        let container = NSPersistentContainer(name: name, managedObjectModel: model)
-        container.persistentStoreDescriptions = [description]
-        
-        var loadError: Swift.Error?
-        container.loadPersistentStores { loadError = $1 }
-        try loadError.map { throw LoadingError.failedToLoadPersistantStores($0) }
-        
-        return container
-    }
-}
-
-private extension NSManagedObjectModel {
-    static func with(name: String, in bundle: Bundle) -> NSManagedObjectModel? {
-        return bundle
-            .url(forResource: name, withExtension: ".momd")
-            .flatMap { NSManagedObjectModel(contentsOf: $0) }
     }
 }
 
