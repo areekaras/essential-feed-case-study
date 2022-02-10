@@ -173,9 +173,9 @@
 			isa = PBXGroup;
 			children = (
 				60A0409727B4076B00801A7A /* CoreDataFeedStore.swift */,
+				60A0409F27B5043600801A7A /* CoreDataHelpers.swift */,
 				60A040A327B5057200801A7A /* ManagedFeedImage.swift */,
 				60A040A127B504F900801A7A /* ManagedCache.swift */,
-				60A0409F27B5043600801A7A /* CoreDataHelpers.swift */,
 				60A0409927B416BB00801A7A /* FeedStore.xcdatamodeld */,
 			);
 			path = CoreData;
