@@ -1,7 +1,7 @@
 ## UX goals for the feed UI experience
 
 [✅] Load feed automatically when the view is presented
-[ ] Allow customer to manually reload feed (pull to refresh)
+[✅] Allow customer to manually reload feed (pull to refresh)
 [ ] Show a loading indicator while loading feed
 [ ] Render all loaded feed items (location, image, description)
 [ ] Image loading experience
