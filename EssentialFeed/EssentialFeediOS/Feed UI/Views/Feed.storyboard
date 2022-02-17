@@ -130,9 +130,20 @@ Location</string>
                     <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="chv-WW-xvl">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <connections>
+                            <action selector="refresh" destination="ChY-RK-3rn" eventType="valueChanged" id="0zT-w1-124"/>
+                        </connections>
                     </refreshControl>
+                    <connections>
+                        <outlet property="refreshController" destination="ChY-RK-3rn" id="oVh-zU-oo1"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="era-zm-qf6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <customObject id="ChY-RK-3rn" customClass="FeedRefreshViewController" customModule="EssentialFeediOS" customModuleProvider="target">
+                    <connections>
+                        <outlet property="view" destination="chv-WW-xvl" id="Eu7-Ec-0Zm"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="1159.4202898550725" y="-86.383928571428569"/>
         </scene>
