@@ -76,7 +76,7 @@ final class FeedPresenter {
     
 }
 
-class FeedPresentationTests: XCTestCase {
+class FeedPresenterTests: XCTestCase {
     
     func test_init_doesNotSendMessagesToView() {
         let (_, view) = makeSUT()
