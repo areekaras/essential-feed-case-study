@@ -48,7 +48,6 @@ When the customer requests to see the feed
 Then the app should display an error message
 ```
 
----
 
 ## Use Cases
 
