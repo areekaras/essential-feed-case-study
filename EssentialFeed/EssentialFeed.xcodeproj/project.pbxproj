@@ -524,7 +524,6 @@
 				60ACFEC12799B7C300BEA2CA /* LoadFeedFromRemoteUseCaseTests.swift */,
 				60B4CB99279D81EF00853D26 /* URLSessionHTTPClientTests.swift */,
 				60DEDB0327C25F6200B541DF /* LoadFeedImageDataFromRemoteUseCaseTests.swift */,
-				60DEDB0F27C38E1B00B541DF /* LoadFeedImageDataFromCacheUseCaseTests.swift */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
@@ -587,6 +586,7 @@
 				60A0409427B3D26700801A7A /* FeedStoreSpecs */,
 				60EA879627AA92F5001E9D38 /* CacheFeedUseCaseTests.swift */,
 				6024285B27ABEF68000F6D71 /* LoadFeedFromCacheUseCaseTests.swift */,
+				60DEDB0F27C38E1B00B541DF /* LoadFeedImageDataFromCacheUseCaseTests.swift */,
 				60A0409527B404D700801A7A /* CoreDataFeedStoreTests.swift */,
 				60A79C6F27AF9A0200168DA2 /* ValidateFeedCacheUseCase.swift */,
 			);
