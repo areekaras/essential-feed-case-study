@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6071D53F27C69601005AAB91 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6071D53D27C69601005AAB91 /* EssentialFeed.framework */; };
+		6071D54027C69601005AAB91 /* EssentialFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6071D53D27C69601005AAB91 /* EssentialFeed.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6071D54127C69601005AAB91 /* EssentialFeediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6071D53E27C69601005AAB91 /* EssentialFeediOS.framework */; };
+		6071D54227C69601005AAB91 /* EssentialFeediOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6071D53E27C69601005AAB91 /* EssentialFeediOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		60E3DEF627C6933E00376750 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E3DEF527C6933E00376750 /* AppDelegate.swift */; };
 		60E3DEF827C6933E00376750 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E3DEF727C6933E00376750 /* SceneDelegate.swift */; };
 		60E3DEFA27C6933E00376750 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E3DEF927C6933E00376750 /* ViewController.swift */; };
@@ -35,7 +39,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		6071D54327C69601005AAB91 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6071D54027C69601005AAB91 /* EssentialFeed.framework in Embed Frameworks */,
+				6071D54227C69601005AAB91 /* EssentialFeediOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		6071D53D27C69601005AAB91 /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6071D53E27C69601005AAB91 /* EssentialFeediOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeediOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60E3DEF227C6933E00376750 /* EssentialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EssentialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60E3DEF527C6933E00376750 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60E3DEF727C6933E00376750 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +77,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6071D53F27C69601005AAB91 /* EssentialFeed.framework in Frameworks */,
+				6071D54127C69601005AAB91 /* EssentialFeediOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +99,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6071D53C27C69601005AAB91 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6071D53D27C69601005AAB91 /* EssentialFeed.framework */,
+				6071D53E27C69601005AAB91 /* EssentialFeediOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		60E3DEE927C6933E00376750 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +115,7 @@
 				60E3DF0B27C6934000376750 /* EssentialAppTests */,
 				60E3DF1527C6934000376750 /* EssentialAppUITests */,
 				60E3DEF327C6933E00376750 /* Products */,
+				6071D53C27C69601005AAB91 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +170,7 @@
 				60E3DEEE27C6933E00376750 /* Sources */,
 				60E3DEEF27C6933E00376750 /* Frameworks */,
 				60E3DEF027C6933E00376750 /* Resources */,
+				6071D54327C69601005AAB91 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
