@@ -17,8 +17,6 @@
 		60E3DEFD27C6933E00376750 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60E3DEFB27C6933E00376750 /* Main.storyboard */; };
 		60E3DEFF27C6934000376750 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60E3DEFE27C6934000376750 /* Assets.xcassets */; };
 		60E3DF0227C6934000376750 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60E3DF0027C6934000376750 /* LaunchScreen.storyboard */; };
-		60E3DF1727C6934000376750 /* EssentialAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E3DF1627C6934000376750 /* EssentialAppUITests.swift */; };
-		60E3DF1927C6934000376750 /* EssentialAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E3DF1827C6934000376750 /* EssentialAppUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,8 +64,6 @@
 		60E3DF0327C6934000376750 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60E3DF0827C6934000376750 /* EssentialAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60E3DF1227C6934000376750 /* EssentialAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		60E3DF1627C6934000376750 /* EssentialAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialAppUITests.swift; sourceTree = "<group>"; };
-		60E3DF1827C6934000376750 /* EssentialAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +107,6 @@
 			children = (
 				60E3DEF427C6933E00376750 /* EssentialApp */,
 				60E3DF0B27C6934000376750 /* EssentialAppTests */,
-				60E3DF1527C6934000376750 /* EssentialAppUITests */,
 				60E3DEF327C6933E00376750 /* Products */,
 				6071D53C27C69601005AAB91 /* Frameworks */,
 			);
@@ -146,15 +141,6 @@
 			children = (
 			);
 			path = EssentialAppTests;
-			sourceTree = "<group>";
-		};
-		60E3DF1527C6934000376750 /* EssentialAppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				60E3DF1627C6934000376750 /* EssentialAppUITests.swift */,
-				60E3DF1827C6934000376750 /* EssentialAppUITestsLaunchTests.swift */,
-			);
-			path = EssentialAppUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +215,7 @@
 					};
 					60E3DF0727C6934000376750 = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 						TestTargetID = 60E3DEF127C6933E00376750;
 					};
 					60E3DF1127C6934000376750 = {
@@ -306,8 +293,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60E3DF1727C6934000376750 /* EssentialAppUITests.swift in Sources */,
-				60E3DF1927C6934000376750 /* EssentialAppUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,15 +510,22 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y8L83HJTF5;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.areekaras.EssentialFeed.EssentialAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EssentialApp.app/EssentialApp";
@@ -545,11 +537,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y8L83HJTF5;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.areekaras.EssentialFeed.EssentialAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
