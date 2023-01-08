@@ -50,6 +50,7 @@
 		60EE2B87296AEDD800C247D5 /* UIControl+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EE2B77296AEDD500C247D5 /* UIControl+TestHelpers.swift */; };
 		60EE2B88296AEDD800C247D5 /* FeedViewController+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EE2B7F296AEDD700C247D5 /* FeedViewController+TestHelpers.swift */; };
 		60EE2B8A296AEDEC00C247D5 /* FeedUIIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EE2B89296AEDEC00C247D5 /* FeedUIIntegrationTests.swift */; };
+		60EE2B8C296AF12800C247D5 /* FeedAcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EE2B8B296AF12800C247D5 /* FeedAcceptanceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +131,7 @@
 		60EE2B7E296AEDD700C247D5 /* FeedViewControllerTests+Assertions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedViewControllerTests+Assertions.swift"; sourceTree = "<group>"; };
 		60EE2B7F296AEDD700C247D5 /* FeedViewController+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedViewController+TestHelpers.swift"; sourceTree = "<group>"; };
 		60EE2B89296AEDEC00C247D5 /* FeedUIIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUIIntegrationTests.swift; sourceTree = "<group>"; };
+		60EE2B8B296AF12800C247D5 /* FeedAcceptanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAcceptanceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +256,7 @@
 				6041947427CA86DE0078DAF9 /* FeedImageDataLoaderWithFallbackCompositeTests.swift */,
 				600DDDBC2969572D00D984D8 /* FeedLoaderCacheDecoratorTests.swift */,
 				600FBACE2969676E00AF7D06 /* FeedImageDataLoaderCacheDecoratorTests.swift */,
+				60EE2B8B296AF12800C247D5 /* FeedAcceptanceTests.swift */,
 			);
 			path = EssentialAppTests;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 				60EE2B82296AEDD800C247D5 /* UIRefreshControl+TestHelpers.swift in Sources */,
 				600DDDBF29695A0100D984D8 /* FeedLoaderStub.swift in Sources */,
 				60EE2B87296AEDD800C247D5 /* UIControl+TestHelpers.swift in Sources */,
+				60EE2B8C296AF12800C247D5 /* FeedAcceptanceTests.swift in Sources */,
 				60BA15172967FC2600F9603B /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 				60EE2B8A296AEDEC00C247D5 /* FeedUIIntegrationTests.swift in Sources */,
 				60EE2B84296AEDD800C247D5 /* FeedViewControllerTests+Assertions.swift in Sources */,
