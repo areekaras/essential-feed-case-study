@@ -50,6 +50,7 @@
 		60EE2B8A296AEDEC00C247D5 /* FeedUIIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EE2B89296AEDEC00C247D5 /* FeedUIIntegrationTests.swift */; };
 		60EE2B8C296AF12800C247D5 /* FeedAcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EE2B8B296AF12800C247D5 /* FeedAcceptanceTests.swift */; };
 		60EE2B8E296C945E00C247D5 /* HTTPClientStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EE2B8D296C945E00C247D5 /* HTTPClientStub.swift */; };
+		60EE2B90296C953200C247D5 /* InMemoryFeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EE2B8F296C953200C247D5 /* InMemoryFeedStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +123,7 @@
 		60EE2B89296AEDEC00C247D5 /* FeedUIIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUIIntegrationTests.swift; sourceTree = "<group>"; };
 		60EE2B8B296AF12800C247D5 /* FeedAcceptanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAcceptanceTests.swift; sourceTree = "<group>"; };
 		60EE2B8D296C945E00C247D5 /* HTTPClientStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientStub.swift; sourceTree = "<group>"; };
+		60EE2B8F296C953200C247D5 /* InMemoryFeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryFeedStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 				600DDDC029695B0C00D984D8 /* XCTestCase+FeedLoader.swift */,
 				600FBAD029696C6900AF7D06 /* FeedImageDataLoaderSpy.swift */,
 				60EE2B8D296C945E00C247D5 /* HTTPClientStub.swift */,
+				60EE2B8F296C953200C247D5 /* InMemoryFeedStore.swift */,
 				600FBAD229696D1100AF7D06 /* XCTestCase+FeedImageDataLoader.swift */,
 				60EE2B7F296AEDD700C247D5 /* FeedViewController+TestHelpers.swift */,
 				60EE2B7D296AEDD600C247D5 /* FeedViewControllerTests+LoaderSpy.swift */,
@@ -368,6 +371,7 @@
 				60EE2B88296AEDD800C247D5 /* FeedViewController+TestHelpers.swift in Sources */,
 				60EE2B83296AEDD800C247D5 /* FeedViewControllerTests+LoaderSpy.swift in Sources */,
 				600FBAD129696C6900AF7D06 /* FeedImageDataLoaderSpy.swift in Sources */,
+				60EE2B90296C953200C247D5 /* InMemoryFeedStore.swift in Sources */,
 				60EE2B85296AEDD800C247D5 /* UIImage+TestHelpers.swift in Sources */,
 				6041947527CA86DE0078DAF9 /* FeedImageDataLoaderWithFallbackCompositeTests.swift in Sources */,
 				60EE2B81296AEDD800C247D5 /* FeedImageCell+TestHelpers.swift in Sources */,
